@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/1b5819cb0a.js" crossorigin="anonymous"></script>
+    <script src="./js/validadorFormulario.js"></script>
 </head>
 
 <body>
@@ -35,24 +36,42 @@
                 <a href="./ubicacion.html">Ubicación</a>
                 <a href="./contacto.html">Contacto</a>
             </nav>
-            <div class="cuerpoPrincipal">
-                <div>
-                    <img src="img/VinoYCopas.jpeg"/>
-                </div>
-                <div>
-                    <img src="img/Aros2.jpeg"/>
-                </div>
-                <div>
-                    <img src="img/Aros3.jpeg"/>
-                </div>
-                <div>
-                    <img src="img/Aros4.jpeg"/>
-                </div>
-                <div>
-                    <img src="img/Aros5.jpeg"/>
-                </div>
-                <div>
-                    <img src="img/Aros6.jpeg"/>
+            <div class="cuerpoPrincipalUnaColumna">
+                <div class="contact_form">
+                    <div>      
+                        <h1>Formulario de contacto</h1>
+                        <h3>Escribinos tus datos y tu consulta y nos pondremos en contacto pronto!</h3>
+                        <form name="formContacto">       
+                            <p>
+                                <label for="nombre">Nombre
+                                    <span>*</span>
+                                </label>
+                                <input type="text" name="nombre" required placeholder="Escribí tu nombre">
+                            </p>
+                            <p>
+                                <label for="email">Email
+                                    <span>*</span>
+                                </label>
+                                <input type="email" name="email" placeholder="Escribí tu e-mail">
+                            </p>
+                            <p>
+                                <label for="confEmail">Confirmación de Email
+                                    <span>*</span>
+                                </label>
+                                <input type="email" name="confEmail" placeholder="Escribí nuevamente tu e-mail">
+                            </p>    
+                            <p>
+                                <label for="mensaje">Mensaje
+                                    <span>*</span>
+                                </label>                     
+                                <textarea name="mensaje" required placeholder="Contanos en qué te podemos ayudar..."></textarea> 
+                            </p>                    
+                            <button type="submit" name="enviar" onclick="valida_enviar()"><p>Enviar</p></button>
+                            <p class="aviso">
+                                <span> * </span>los campos son obligatorios.
+                            </p>          
+                        </form>
+                    </div>  
                 </div>
             </div>
             <footer class="footer">Mariano Melamed - 2022 - Todos los derechos reservados</footer>

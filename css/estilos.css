@@ -1,0 +1,166 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    border: 1px solid black;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.encabezado {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: black;
+    color: pink;
+    padding: 2rem;
+}
+
+.encabezado div p {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: pink;
+    padding: 2rem;
+}
+
+.cuerpoPrincipal {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: pink;
+}
+
+.cuerpoPrincipalUnaColumna {    
+    background-color: pink;
+}
+
+.footer {
+    padding: 2rem;
+    background-color: pink;
+}
+
+.contact_form{  
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    padding-left: 30px;
+}
+ 
+input{
+    background-color: white; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: purple; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+textarea{
+    background-color: white; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: purple; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+  
+label{
+    display: block; 
+    float: center;  
+}
+
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: pink; 
+    border-color: pink; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+}
+  
+button p{
+    color: black; 
+}
+  
+span{
+    color: red; 
+}
+  
+.aviso{
+    font-size: 13px;  
+    color: black;  
+}
+
+#crossFading {
+    position:relative;
+}
+
+#crossFading img {
+    position:absolute;
+    transition: opacity 1s ease-in-out;
+}
+  
+#crossFading img.top:hover {
+    opacity:0;
+}
+
+@media screen and (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    aside {
+        flex-basis: calc(33.3% - 2rem);
+    }
+    article {
+        flex-basis: calc(66.7% - 2rem);
+        background-color: pink;
+    }
+}
